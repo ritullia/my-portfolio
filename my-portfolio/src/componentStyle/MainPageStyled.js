@@ -22,4 +22,5 @@ export const MainTextContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
+  transform: translate(340px, 190%);
 `;
