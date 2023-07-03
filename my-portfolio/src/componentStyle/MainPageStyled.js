@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-  margin: 80px;
+  margin: 180px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -14,4 +14,12 @@ export const MainContainer = styled.div`
 
 export const MainImg = styled.img`
   width: 740px;
+  position: absolute;
+  transform: translate(-140px, -20%);
+`;
+
+export const MainTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
 `;

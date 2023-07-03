@@ -1,4 +1,8 @@
-import { MainContainer, MainImg } from "../componentStyle/MainPageStyled";
+import {
+  MainContainer,
+  MainImg,
+  MainTextContainer,
+} from "../componentStyle/MainPageStyled";
 import working from "../assets/working.png";
 
 export const MainPage = () => {
@@ -7,10 +11,10 @@ export const MainPage = () => {
       <MainContainer>
         <MainImg src={working} alt="" />
 
-        <div>
+        <MainTextContainer>
           <h1>Hello,</h1>
           <h1>I'M RITA CINCILEVIČIENĖ</h1>
-        </div>
+        </MainTextContainer>
       </MainContainer>
     </>
   );
