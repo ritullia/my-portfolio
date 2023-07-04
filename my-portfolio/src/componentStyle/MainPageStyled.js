@@ -10,12 +10,32 @@ export const MainContainer = styled.div`
   height: 70vh;
   border-radius: 35px;
   box-shadow: 8px 10px 30px #dddddd;
+
+  @media (max-width: 1024px) {
+    width: 640px;
+  }
+  @media (max-width: 841px) {
+    width: 340px;
+    margin: 160px;
+  }
+  @media (min-width: 840px) {
+    width: 640px;
+    flex-direction: column;
+  }
+`;
+
+export const ImgContainer = styled.div`
+  display: block;
+  border: 2px blue solid;
+  width: auto;
+  height: 100%;
 `;
 
 export const MainImg = styled.img`
-  display: block;
   max-width: 100%;
+
   position: absolute;
+  object-fit: cover;
   /* transform: translate(auto, 20%); */
 
   @media only screen and (max-width: 1024px) {
@@ -32,5 +52,7 @@ export const MainImg = styled.img`
 export const MainTextContainer = styled.div`
   display: flex;
   flex-direction: column;
+  color: #fff;
   position: relative;
+  background-color: blue;
 `;
