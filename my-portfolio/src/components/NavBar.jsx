@@ -1,20 +1,37 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark">
+      <Navbar
+        collapseOnSelect
+        fixed="top"
+        expand="sm"
+        bg="dark"
+        data-bs-theme="dark"
+      >
         <Container>
           <Navbar.Brand href="/">
             <img src="" alt="Logo" />
           </Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/contacts">Contacts</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-          </Nav>
+          <Navbar.Toggle
+            aria-controls="navbarScroll"
+            data-bs-target="#navbarScroll"
+          />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav className="me-auto">
+              <Nav.Link to="/" as={Link}>
+                Home
+              </Nav.Link>
+              <Nav.Link to="/contacts" as={Link}>
+                Contacts
+              </Nav.Link>
+              <Nav.Link to="/about" as={Link}>
+                About
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>

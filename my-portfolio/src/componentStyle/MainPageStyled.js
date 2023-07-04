@@ -13,14 +13,24 @@ export const MainContainer = styled.div`
 `;
 
 export const MainImg = styled.img`
-  width: 740px;
+  display: block;
+  max-width: 100%;
   position: absolute;
-  transform: translate(-140px, -20%);
+  /* transform: translate(auto, 20%); */
+
+  @media only screen and (max-width: 1024px) {
+    width: 640px;
+  }
+  @media (max-width: 640px) {
+    width: 340px;
+  }
+  @media (min-width: 641px) {
+    width: 640px;
+  }
 `;
 
 export const MainTextContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  transform: translate(340px, 190%);
 `;
