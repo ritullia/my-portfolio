@@ -1,10 +1,11 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { StyledNavbar } from "../componentStyle/NavBarStyled";
 import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
     <>
-      <Navbar
+      <StyledNavbar
         collapseOnSelect
         fixed="top"
         expand="sm"
@@ -33,7 +34,7 @@ export const NavBar = () => {
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </StyledNavbar>
     </>
   );
 };
