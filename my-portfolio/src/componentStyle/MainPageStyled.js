@@ -16,7 +16,6 @@ export const MainContainer = styled.div`
 `;
 
 export const ImgContainer = styled.div`
-  border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
 
@@ -34,7 +33,6 @@ export const MainImg = styled.img`
 
 export const MainTextContainer = styled.div`
   font-family: "Raleway", sans-serif;
-  border: 1px solid black;
   color: ${palette.fontColor};
   margin: 3rem;
 `;
