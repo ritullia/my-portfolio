@@ -1,60 +1,40 @@
 import styled from "styled-components";
+import * as palette from "./ColorsVariables";
 
 export const MainContainer = styled.div`
-  margin: 180px;
-  display: flex;
-  flex-flow: column wrap;
-  background: linear-gradient(#e9eaf0, #cdd2d6);
-  width: auto;
-  height: 70vh;
-  border-radius: 35px;
-  box-shadow: 8px 10px 30px #dddddd;
-
-  @media (max-width: 1200px) {
-  }
-  @media (max-width: 740px) {
-    width: 640px;
-    margin: 140px;
-  }
-  /* @media (min-width: 840px) {
-    width: 640px;
-    flex-direction: column;
-  } */
-`;
-
-export const Container = styled.div`
+  margin: 80px;
+  padding: 2rem;
   display: flex;
   flex-direction: row;
-  gap: 40px;
-  height: 100%;
-  position: absolute;
+  max-width: auto;
+  background-color: ${palette.elementColor};
+  border-radius: 40px;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
 `;
 
 export const ImgContainer = styled.div`
-  width: 640px;
-  height: 640px;
-  transform: translate(0px, 20%);
-  /* border: 2px blue solid; */
-  /* background-color: blue; */
-  @media (max-width: 740px) {
-    width: 540px;
-    transform: translate(-120px, 5%);
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 840px) {
   }
 `;
 
 export const MainImg = styled.img`
-  max-width: 100%;
-  object-fit: cover;
+  width: 640px;
 
-  /* @media (min-width: 741px) {
-    width: 640px;
-  } */
+  @media (max-width: 640px) {
+    width: 440px;
+  }
 `;
 
 export const MainTextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  position: relative;
-  /* background-color: yellow; */
+  font-family: "Raleway", sans-serif;
+  border: 1px solid black;
+  color: ${palette.fontColor};
+  margin: 3rem;
 `;

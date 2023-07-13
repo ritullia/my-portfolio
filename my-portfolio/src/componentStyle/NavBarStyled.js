@@ -1,19 +1,17 @@
 import styled from "styled-components";
 import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+import { Nav } from "react-bootstrap";
+import * as palette from "./ColorsVariables";
 
 export const StyledNavbar = styled(Navbar)`
-  padding: 20px 10px;
-  justify-content: space-evenly;
-  align-items: center;
+  padding: 10px 10px;
+  position: relative;
+  background-color: ${palette.MainColor}!important;
 `;
 
-export const StyledNav = styled(Nav)`
+export const StyledNavGroup = styled(Navbar.Collapse)`
   display: flex;
-  justify-content: space-evenly;
-  flex-shrink: 3;
 `;
-export const StyledNavLink = styled(Nav.Link)`
-  margin-left: 40px;
-  color: #c9c9c9;
+export const StyledNav = styled(Nav)`
+  margin-left: 30px;
 `;

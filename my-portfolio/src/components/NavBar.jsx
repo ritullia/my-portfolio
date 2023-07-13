@@ -1,8 +1,8 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import {
   StyledNavbar,
+  StyledNavGroup,
   StyledNav,
-  StyledNavLink,
 } from "../componentStyle/NavBarStyled";
 import { Link } from "react-router-dom";
 
@@ -24,19 +24,19 @@ export const NavBar = () => {
             aria-controls="navbarScroll"
             data-bs-target="#navbarScroll"
           />
-          <Navbar.Collapse id="navbarScroll">
+          <StyledNavGroup id="navbarScroll">
             <StyledNav className="me-auto">
-              <StyledNavLink to="/" as={Link}>
+              <Nav.Link to="/" as={Link}>
                 Home
-              </StyledNavLink>
-              <Nav.Link to="/contacts" as={Link}>
-                Contacts
               </Nav.Link>
               <Nav.Link to="/about" as={Link}>
                 About
               </Nav.Link>
+              <Nav.Link to="/contacts" as={Link}>
+                Contacts
+              </Nav.Link>
             </StyledNav>
-          </Navbar.Collapse>
+          </StyledNavGroup>
         </Container>
       </StyledNavbar>
     </>
