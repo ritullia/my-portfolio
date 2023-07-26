@@ -6,9 +6,9 @@ export const MainContainer = styled.div`
   padding: 2rem;
   display: flex;
   flex-direction: row;
-  max-width: auto;
-  background-color: ${palette.elementColor};
+  /* background-color: ${palette.elementColor}; */
   border-radius: 40px;
+  border: 1px solid ${palette.elementColor};
 
   @media (max-width: 640px) {
     flex-direction: column;
@@ -20,6 +20,10 @@ export const ImgContainer = styled.div`
   flex-wrap: wrap;
 
   @media (max-width: 840px) {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-20%, -45%);
   }
 `;
 
@@ -28,6 +32,10 @@ export const MainImg = styled.img`
 
   @media (max-width: 640px) {
     width: 440px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    width: 240px;
   }
 `;
 

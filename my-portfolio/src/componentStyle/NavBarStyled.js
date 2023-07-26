@@ -15,3 +15,7 @@ export const StyledNavGroup = styled(Navbar.Collapse)`
 export const StyledNav = styled(Nav)`
   margin-left: 30px;
 `;
+
+export const StyleLogo = styled.img`
+  width: 80px;
+`;

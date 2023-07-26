@@ -3,8 +3,10 @@ import {
   StyledNavbar,
   StyledNavGroup,
   StyledNav,
+  StyleLogo,
 } from "../componentStyle/NavBarStyled";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 export const NavBar = () => {
   return (
@@ -18,7 +20,7 @@ export const NavBar = () => {
       >
         <Container>
           <Navbar.Brand href="/">
-            <img src="" alt="Logo" />
+            <StyleLogo src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="navbarScroll"
